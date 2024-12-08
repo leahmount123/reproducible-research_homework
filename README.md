@@ -1,5 +1,27 @@
 # Reproducible research: version control and R
 
+## Assignment answers
+
+Questions 1-3: https://github.com/leahmount123/logistic_growth
+
+### Question 4
+
+**(a)** This is what the appears when the code is executed:
+![image](https://github.com/user-attachments/assets/2b6a1d41-7b0f-47b1-9260-3aad625ed6c7)
+
+- When executed, the code shows 2 similar layout plots next to each other, but the contents are very different
+- The code for both is identical, and each time, there are 500 steps in the walk
+- Each plot depicts a random walk containing these 500 steps, going from a darker to a lighter blue
+  - Each point is equivalent to 1 of the 500 steps
+- The plots are very different from one another as the walks are completely random each time
+   - Upon re-running the code, the plots completely change again
+- Path 1: the walk is almost a spiral shape around the graph
+- Path 2: the trajectory seems to increase in y and decrease in x across the walk
+
+**(b)** When random numbers are generated in R, they are often *pseudorandom* numbers; if you set a seed for the random numbers, the output becomes reproducible. This uses the **set.seed()** function. Essentially, this assigns the reproducibility to an arbitrary integer, so when the seed is used, the output is reproducible.
+
+**(c)**
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points. First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
