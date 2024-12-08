@@ -24,6 +24,7 @@ Questions 1-3: https://github.com/leahmount123/logistic_growth
 
 **(d)** <img width="1372" alt="Screenshot 2024-12-08 at 20 16 13" src="https://github.com/user-attachments/assets/f390ea05-f829-4512-abbd-229b07699b43">
 
+### Question 5
 
 ## Instructions
 
