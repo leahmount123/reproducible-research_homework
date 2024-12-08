@@ -20,7 +20,9 @@ Questions 1-3: https://github.com/leahmount123/logistic_growth
 
 **(b)** When random numbers are generated in R, they are often *pseudorandom* numbers; if you set a seed for the random numbers, the output becomes reproducible. This uses the **set.seed()** function. Essentially, this assigns the reproducibility to an arbitrary integer, so when the seed is used, the output is reproducible.
 
-**(c)** The edited code has been pushed to the main branch of this repo. It has updated the 
+**(c)** The edited code has been pushed to the main branch of this repo. It has updated the R script in the **question-4-code** folder.
+
+**(d)** 
 
 ## Instructions
 
