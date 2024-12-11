@@ -21,20 +21,12 @@ data_clean$genome_length_nt <- data_clean$genome_length_kb * 1000
 Log-transforming the data
 
 ```{r}
-data_clean$log_virion_vol <- log10(data_clean$virion_volume_nm_nm_nm)
-data_clean$log_genome_length_nt <- log10(data_clean$genome_length_nt)
-data_clean$log_genome_length_kb <- log10(data_clean$genome_length_kb)
+data_clean$log_virion_vol <- log(data_clean$virion_volume_nm_nm_nm)
+data_clean$log_genome_length_nt <- log(data_clean$genome_length_nt)
+data_clean$log_genome_length_kb <- log(data_clean$genome_length_kb)
 ```
 
 Finding the exponent and scaling factor
-
-```{r}
-library(dplyr)
-model <- lm(log_virion_vol ~ log_genome_length_nt, data_clean)
-summary(model)
-```
-
-Making a kb linear model
 
 ```{r}
 library(dplyr)
@@ -57,11 +49,4 @@ ggplot(aes(log_genome_length_kb, log_virion_vol), data = data_clean) +
   theme_bw() +
   
   geom_smooth(method = lm) 
-```
-
-Finding the estimated volume for a 300kb virus
-
-```{r}
-help("approx")
-xy.coords(x = log(300), y = NULL)
 ```
