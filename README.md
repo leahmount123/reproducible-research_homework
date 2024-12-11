@@ -26,6 +26,34 @@ Questions 1-3: https://github.com/leahmount123/logistic_growth
 
 ### Question 5
 
+**Note:** According to the wording of the question, the allometric model says that *L* refers to the genome length **in nucleotides**. The raw data has the genome length in **kilobases**. I did the conversions (x1000) and found that to reach the correct scaling factor, exponent, and plot, it required the genome length to remain in kilobases. For this reason, I have not done the conversions in the questions.
+
+In the case of these questions, the log base will be e.
+
+**(a)** The data has 13 columns and 33 rows.
+
+**(b)** A suitable transformation to fit a linear model for this data would be to log-transform both sides of the allometric equation.
+- V = αL<sup>β<sup>
+- logV = logαL<sup>β<sup>
+- logV = logL<sup>β<sup> + logα
+- logV = βlogL + logα
+- This is now a version of y=mx+c, a linear model
+
+These transformations have been applied to the data in the code.
+
+**(c)**
+
+**Scaling factor (α) = exp(7.0748) ≈ 1182**
+- In a linear model, logα is equivalent to the y-intercept of the line
+- Upon doing a summary of the linear model, I found that logα = 7.0748
+- Hence, α ≈ 1182, with a significant p-value of 2.28e-10
+- This is the same scaling factor for dsDNA viruses as seen in the original paper
+
+**Exponent (β) = 1.5152 ≈ 1.52**
+- In a linear model, β is equivalent to the gradient of the line
+- Upon doing a summary of the linear model, I found that β = 1.5152
+- This is the same exponent for dsDNA viruses as seen in the original paper
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points. First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
