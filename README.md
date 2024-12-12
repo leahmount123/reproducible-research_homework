@@ -35,7 +35,7 @@ In the case of these questions, the log base will be e.
 **(b)** A suitable transformation to fit a linear model for this data would be to log-transform both sides of the allometric equation.
 - V = αL<sup>β<sup>
 - logV = logαL<sup>β<sup>
-- logV = logL<sup>β<sup> + logα
+- logV = logα + logL<sup>β<sup> 
 - logV = βlogL + logα
 - This is now a version of y=mx+c, a linear model
 
