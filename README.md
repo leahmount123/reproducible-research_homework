@@ -54,6 +54,17 @@ These transformations have been applied to the data in the code.
 - Upon doing a summary of the linear model, I found that β = 1.5152
 - This is the same exponent for dsDNA viruses as seen in the original paper
 
+**(d)** This is the figure that I encoded:
+![image](https://github.com/user-attachments/assets/fef4faf4-3a79-4d0f-8d9d-ebb7bdac11e7)
+
+The code I used for this plot is in the R script found in this repo.
+
+**(e)** This is how you would find the estimated volume in nm<sup>3<sup>
+- V = αL<sup>β<sup>
+- V = 1182 * 300<sup>1.52<sup>
+- V = 6,884,014.616
+- V ≈ 6,884,015nm<sup>3<sup>
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points. First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
